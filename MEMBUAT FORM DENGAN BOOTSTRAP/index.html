@@ -1,24 +1,109 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <title>Forms Bootstrap</title>
-  </head>
-  <body>
-    <div class="container">
-        <h2 class="alert alert-primary text-center mt-5px">FORMULIR PENDAFTARAN MAHASISWA BARU</h2>
-    </div>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+    integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
 
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
-  </body>
+  <title>Forms Bootstrap</title>
+</head>
+
+<body>
+  <div class="container">
+    <h2 class="alert alert-primary text-center mt-3">FORMULIR PENDAFTARAN MAHASISWA BARU</h2>
+
+    <form action="">
+      <div class="form-group">
+        <label for="Nama_Lengkap">Nama Lengkap :</label>
+        <input type="text" class="form-control" placeholder="Masukkan Nama Lengkap Anda" id="Nama_Lengkap">
+      </div>
+      <div class="form-group">
+        <label for="Email">Email :</label>
+        <input type="email" class="form-control" placeholder="Masukkan Email Anda" id="Email">
+      </div>
+      <div class="form-group">
+        <label for="Password">Password :</label>
+        <input type="password" class="form-control" placeholder="Masukkan Password Anda" id="Password">
+        <small>*Password Harus Terdiri Dari Angka Dan Huruf Dan Minimal 6 Karakter</small>
+      </div>
+      <div class="row">
+        <div class="col-md-6">
+          <div class="form-group">
+            <label for="Tempat_Lahir">Tempat Lahir :</label>
+            <input type="text" class="form-control" placeholder="Masukkan Tempat Lahir Anda" id="Tempat_Lahir">
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="form-group">
+            <label for="Tanggal_Lahir">Tanggal Lahir :</label>
+            <input type="date" class="form-control" id="Tanggal_Lahir">
+          </div>
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="Pilih_Jurusan">Pilih Jurusan :</label>
+        <select name="Pilih_Jurusan" id="Pilih_Jurusan" class="form-control">
+          <option value="Teknik_Informatika">1. Teknik_Informatika</option>
+          <option value="Teknik_Komputer">2. Teknik Komputer</option>
+          <option value="Sistem_Informasi">3. Sistem Informasi</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="alasan_memilih_universitas_ABC">Alasan Memilih Universitas ABC :</label>
+        <textarea name="Alasan" id="alasan_memilih_universitas_ABC" class="form-control" rows="7"></textarea>
+      </div>
+      <div class="form-group">
+        <label for="Jenis_Kelamin">Jenis Kelamin :</label><br>
+        <div class="form-check-inline">
+          <input type="radio" class="form-check-input" name="radio1" id="radio2" checked="">
+          <option value="Laki-Laki">Laki-Laki</option>
+        </div>
+        <div class="form-check-inline">
+          <input type="radio" class="form-check-input" name="radio1" id="radio2">
+          <option value="Perempuan">Perempuan</option>
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="">Upload Dokumen</label>
+        <input type="file" name="" class="form-control-file">
+        <small>*Upload File Dengan Ukuran Maksimal 2 MB</small>
+      </div>
+      <button type="submit" class="btn btn-primary">SIMPAN</button>
+      <button type="reset" class="btn btn-danger">RESET</button>
+    </form>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
+    integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+    integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+    crossorigin="anonymous"></script>
+</body>
+
 </html>1
